@@ -10,7 +10,7 @@ function Fotter() {
     <div className="footer">
       <div className="container flex flex-col justify-center items-center pt-14 pb-8 gap-10">
         <img
-          src="/src/assets/logo-footer.svg"
+          src="/assets/img/logo-footer.svg"
           alt="logo"
           width={182}
           height={184}
