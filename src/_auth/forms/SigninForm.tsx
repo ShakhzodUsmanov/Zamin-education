@@ -23,7 +23,7 @@ const SigninForm = () => {
     },
   });
   return (
-    <div className="signing">
+    <div className="signing h-[calc(100vh-170px)]">
       <div className="container flex justify-between lg:flex-row flex-col">
         <div className="signin-text lg:w-1/2 w-full mt-4">
           <div className="h1-header">
@@ -32,7 +32,7 @@ const SigninForm = () => {
           <p className="p-ghost mt-8">
             Agarda siz ro’yxatdan o’tmagan bo’lsangiz, ro’yxatdan o’tishingiz
             talab qilinadi.{" "}
-            <Link to="sign-up" className="a-link">
+            <Link to="/sign-up" className="a-link">
               Ro’yxatdan o’tish
             </Link>
           </p>

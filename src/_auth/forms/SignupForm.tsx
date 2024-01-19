@@ -20,7 +20,6 @@ const SignupForm = () => {
     defaultValues: {
       name: "",
       surname: "",
-      phone: +998,
       email: "",
       username: "",
       password: "",
@@ -158,7 +157,7 @@ const SignupForm = () => {
         <p className="p-ghost mt-8 pb-10">
           Agarda siz tizimdan ro’yxatdan o’tgan bo’lsangiz kirish tugmasini
           bosing.{" "}
-          <Link to="sign-up" className="a-link">
+          <Link to="/sign-in" className="a-link">
             Kirish
           </Link>
         </p>

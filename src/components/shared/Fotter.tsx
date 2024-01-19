@@ -7,7 +7,7 @@ import {
 
 function Fotter() {
   return (
-    <div className="footer">
+    <div className="footer mt-[100px]">
       <div className="container flex flex-col justify-center items-center pt-14 pb-8 gap-10">
         <img
           src="/assets/img/logo-footer.svg"

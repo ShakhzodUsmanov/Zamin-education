@@ -7,6 +7,7 @@ import SignupForm from "./_auth/forms/SignupForm";
 
 import "./global.css";
 import { Routes, Route } from "react-router-dom";
+import Courses from "./_root/pages/Courses";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route element={<RootLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
         </Route>
       </Routes>
     </div>

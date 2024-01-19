@@ -29,7 +29,7 @@ const Topbar = () => {
           </Link>
           <div className="flex align-middle border-l border-gray-300 h-9"></div>
           <Link to="/sign-up">
-            <Button className="shad-button_primary">Ro’yxatdan o’tish</Button>
+            <Button className="shad-button_primary w-[200px]">Ro’yxatdan o’tish</Button>
           </Link>
         </ul>
       </div>

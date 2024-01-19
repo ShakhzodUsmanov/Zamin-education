@@ -37,7 +37,7 @@
     @apply w-5 h-5 bg-light-1 flex items-center justify-center rounded-full text-dark-blue text-sm
   }
   .signin-icons{
-    @apply flex items-center justify-center border border-light-3 w-[122px] h-[67px] rounded-lg hover:shadow-lg transition hover:border-none hover:scale-105
+    @apply flex items-center justify-center bg-light-1 border border-light-3 w-[122px] h-[67px] rounded-lg hover:shadow-lg transition hover:border-none hover:scale-105
   }
 
   .a-link {
@@ -46,6 +46,14 @@
 
   .h1-header {
     @apply text-[54px] font-bold leading-[148%] tracking-tighter text-dark-blue-2;
+  }
+
+  .h2-title{
+    @apply text-[36px] font-bold leading-[138%] tracking-tighter text-dark-blue-2;
+  }
+
+  .h3-title{
+    @apply text-[36px] font-bold leading-[138%] tracking-tighter text-dark-blue-2 font-josefin;
   }
 
   .p-ghost {
@@ -97,7 +105,7 @@
 
   /* Button */
   .shad-button_primary {
-    @apply bg-gradient-to-r from-primary-green from-[-37%] to-primary-purple to-[137%] transform transition hover:scale-105 text-light-1 flex gap-2 text-center justify-center align-middle py-4 text-sm shadow-lg hover:shadow-xl !important;
+    @apply bg-gradient-to-r from-primary-green from-[-37%] to-primary-purple to-[137%] transform transition hover:scale-105 text-light-1 flex gap-2 text-center justify-center align-middle py-[25px] text-sm shadow-lg hover:shadow-xl !important;
   }
 
   .shad-button_dark_4 {

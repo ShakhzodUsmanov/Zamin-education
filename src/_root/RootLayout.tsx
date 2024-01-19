@@ -4,7 +4,7 @@ import Footer from "@/components/shared/Fotter";
 
 const RootLayout = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-[url('/public/assets/bg/root-bg.svg')] bg-no-repeat">
       <div className="container">
         <Topbar />
         <Outlet />
