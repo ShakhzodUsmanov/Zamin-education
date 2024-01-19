@@ -34,13 +34,13 @@ const SignupForm = () => {
         <Form {...form}>
           <div className="w-full flex-start flex-col mt-10">
             <form
-              className="w-2/3 mt-4 grid grid-cols-4 gap-10 "
+              className="w-2/3 mt-4 grid md:grid-cols-4 gap-7 lg:gap-10 "
             >
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
-                  <FormItem className="col-start-1 col-end-3">
+                  <FormItem className="md:col-start-1 md:col-end-3">
                     <FormControl>
                       <Input
                         placeholder="Ismingiz"
@@ -57,7 +57,7 @@ const SignupForm = () => {
                 control={form.control}
                 name="surname"
                 render={({ field }) => (
-                  <FormItem className="col-start-3 col-end-5">
+                  <FormItem className="md:col-start-3 md:col-end-5">
                     <FormControl>
                       <Input
                         placeholder="Familiyangiz"
@@ -74,7 +74,7 @@ const SignupForm = () => {
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
-                  <FormItem className="col-start-1 col-end-3">
+                  <FormItem className="md:col-start-1 md:col-end-3">
                     <FormControl>
                       <Input placeholder="Telefon" type="text" className="shad-input" {...field} />
                     </FormControl>
@@ -86,7 +86,7 @@ const SignupForm = () => {
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem className="col-start-3 col-end-5">
+                  <FormItem className="md:col-start-3 md:col-end-5">
                     <FormControl>
                       <Input
                       placeholder="Email manzilingiz"
@@ -103,7 +103,7 @@ const SignupForm = () => {
                 control={form.control}
                 name="username"
                 render={({ field }) => (
-                  <FormItem className="col-start-1 col-end-3">
+                  <FormItem className="md:col-start-1 md:col-end-3">
                     <FormControl>
                       <Input placeholder="Login" type="text" className="shad-input" {...field} />
                     </FormControl>
@@ -115,7 +115,7 @@ const SignupForm = () => {
                 control={form.control}
                 name="password"
                 render={({ field }) => (
-                  <FormItem className="col-start-3 col-end-5">
+                  <FormItem className="md:col-start-3 md:col-end-5">
                     <FormControl>
                       <Input
                       placeholder="Parol"
@@ -130,7 +130,7 @@ const SignupForm = () => {
               />
               <Button
                 type="submit"
-                className="shad-button_primary w-full mt-8 col-start-2 col-end-4"
+                className="shad-button_primary w-full mt-8 md:col-start-2 md:col-end-4"
               >
                 Ro’yxatdan o’tish
               </Button>
@@ -140,7 +140,7 @@ const SignupForm = () => {
               <LineText icons={false} />
             </div>
 
-            <div className="messengers flex justify-between w-2/5 mt-4 pb-7">
+            <div className="messengers flex justify-between w-full sm:w-4/5 md:w-3/5 lg:w-2/5 mt-4 pb-7">
               <Link to="#" className="signin-icons">
                 <img src="/assets/icons/google-colorful.svg" alt="google" />
               </Link>

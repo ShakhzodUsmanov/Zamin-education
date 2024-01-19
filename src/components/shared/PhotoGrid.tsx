@@ -1,7 +1,7 @@
 const PhotoGrid = () => {
   return (
     <div className="grid">
-      <div className="grid grid-cols-3 grid-rows-5 gap-4 h-[700px]">
+      <div className="grid grid-cols-3 grid-rows-5 gap-4 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px] xl:h-[800px]">
         <div className="row-span-2">
           <img src="/assets/photo-grid/1.png" alt="img" className="w-full h-full aspect-square"/>
         </div>

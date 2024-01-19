@@ -24,8 +24,8 @@ const SigninForm = () => {
   });
   return (
     <div className="signing h-[calc(100vh-170px)]">
-      <div className="container flex justify-between lg:flex-row flex-col">
-        <div className="signin-text lg:w-1/2 w-full mt-4">
+      <div className="container flex lg:justify-between justify-center items-center lg:flex-row flex-col gap-10">
+        <div className="signin-text lg:w-1/2 w-full mt-4 text-center lg:text-start">
           <div className="h1-header">
             Zamin Ta’lim platformasiga xush kelibsiz
           </div>
@@ -39,7 +39,7 @@ const SigninForm = () => {
         </div>
 
         <Form {...form}>
-          <div className="sm:w-420 flex-start flex-col">
+          <div className="flex-start flex-col w-full sm:w-420">
             <form
               className="flex flex-col w-full mt-4 gap-9"
             >
