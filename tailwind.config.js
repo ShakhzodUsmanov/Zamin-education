@@ -22,10 +22,10 @@ module.exports = {
       colors: {
         'primary-green': '#1D9DA0',
         'primary-purple': '#7378EE',
+        'blue': '#060FEC',
         'primary-500': '#877EFF',
         'primary-600': '#5D5FEF',
         'secondary-500': '#FFB620',
-        'blue': '#060FEC',
         'off-white': '#D0DFFF',
         'red': '#FF5A5A',
         'dark-blue': '#070F34',
