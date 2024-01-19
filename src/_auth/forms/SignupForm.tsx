@@ -7,43 +7,50 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { number, z } from "zod";
 import { useForm } from "react-hook-form";
-import { SigninValidation } from "@/lib/validation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import LineText from "@/components/shared/LineText";
+import { SignupValidation } from "@/lib/validation";
 
 const SignupForm = () => {
-  const form = useForm<z.infer<typeof SigninValidation>>({
-    resolver: zodResolver(SigninValidation),
+  const form = useForm<z.infer<typeof SignupValidation>>({
+    resolver: zodResolver(SignupValidation),
     defaultValues: {
+      name: "",
+      surname: "",
+      phone: +998,
       email: "",
+      username: "",
       password: "",
     },
   });
+
   return (
     <div className="signup w-full justify-center">
       <div className="container flex flex-col w-full justify-center text-center">
         <div className="h1-header">Ro’yxatdan o’tish</div>
 
         <Form {...form}>
-          <div className="w-full flex-start flex-col">
+          <div className="w-full flex-start flex-col mt-10">
             <form
               onSubmit={console.log("Submit")}
               className="w-2/3 mt-4 grid grid-cols-4 gap-10 "
             >
               <FormField
                 control={form.control}
-                name="email"
+                name="name"
                 render={({ field }) => (
                   <FormItem className="col-start-1 col-end-3">
-                    <FormLabel className="shad-form_label">
-                      Foydalanuvchi nomi yoki email
-                    </FormLabel>
                     <FormControl>
-                      <Input type="text" className="shad-input" {...field} />
+                      <Input
+                        placeholder="Ismingiz"
+                        type="text"
+                        className="shad-input"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -51,14 +58,12 @@ const SignupForm = () => {
               />
               <FormField
                 control={form.control}
-                name="password"
+                name="surname"
                 render={({ field }) => (
                   <FormItem className="col-start-3 col-end-5">
-                    <FormLabel className="shad-form_label">
-                      Parolni kiriting
-                    </FormLabel>
                     <FormControl>
                       <Input
+                        placeholder="Familiyangiz"
                         type="password"
                         className="shad-input"
                         {...field}
@@ -70,14 +75,11 @@ const SignupForm = () => {
               />
               <FormField
                 control={form.control}
-                name="email"
+                name="phone"
                 render={({ field }) => (
                   <FormItem className="col-start-1 col-end-3">
-                    <FormLabel className="shad-form_label">
-                      Foydalanuvchi nomi yoki email
-                    </FormLabel>
                     <FormControl>
-                      <Input type="text" className="shad-input" {...field} />
+                      <Input placeholder="Telefon" type="text" className="shad-input" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -85,14 +87,12 @@ const SignupForm = () => {
               />
               <FormField
                 control={form.control}
-                name="password"
+                name="email"
                 render={({ field }) => (
                   <FormItem className="col-start-3 col-end-5">
-                    <FormLabel className="shad-form_label">
-                      Parolni kiriting
-                    </FormLabel>
                     <FormControl>
                       <Input
+                      placeholder="Email manzilingiz"
                         type="password"
                         className="shad-input"
                         {...field}
@@ -104,14 +104,11 @@ const SignupForm = () => {
               />
               <FormField
                 control={form.control}
-                name="email"
+                name="username"
                 render={({ field }) => (
                   <FormItem className="col-start-1 col-end-3">
-                    <FormLabel className="shad-form_label">
-                      Foydalanuvchi nomi yoki email
-                    </FormLabel>
                     <FormControl>
-                      <Input type="text" className="shad-input" {...field} />
+                      <Input placeholder="Login" type="text" className="shad-input" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -122,11 +119,9 @@ const SignupForm = () => {
                 name="password"
                 render={({ field }) => (
                   <FormItem className="col-start-3 col-end-5">
-                    <FormLabel className="shad-form_label">
-                      Parolni kiriting
-                    </FormLabel>
                     <FormControl>
                       <Input
+                      placeholder="Parol"
                         type="password"
                         className="shad-input"
                         {...field}

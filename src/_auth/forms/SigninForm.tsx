@@ -43,18 +43,15 @@ const SigninForm = () => {
           <div className="sm:w-420 flex-start flex-col">
             <form
               onSubmit={console.log("Submit")}
-              className="flex flex-col w-full mt-4"
+              className="flex flex-col w-full mt-4 gap-9"
             >
               <FormField
                 control={form.control}
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="shad-form_label">
-                      Foydalanuvchi nomi yoki email
-                    </FormLabel>
                     <FormControl>
-                      <Input type="text" className="shad-input" {...field} />
+                      <Input placeholder="Foydalanuvchi nomi yoki email" type="text" className="shad-input" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -66,11 +63,9 @@ const SigninForm = () => {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="shad-form_label">
-                      Parolni kiriting
-                    </FormLabel>
                     <FormControl>
                       <Input
+                        placeholder="Parolni kiriting"
                         type="password"
                         className="shad-input"
                         {...field}
@@ -90,14 +85,14 @@ const SigninForm = () => {
               <LineText icons={false} />
             </div>
 
-            <div className="messengers flex justify-between w-1/2 mt-4 pb-7">
-              <Link to='#' className="signin-icons">
+            <div className="messengers flex justify-between w-full mt-4 pb-7">
+              <Link to="#" className="signin-icons">
                 <img src="/assets/icons/google-colorful.svg" alt="google" />
               </Link>
-              <Link to='#' className="signin-icons">
+              <Link to="#" className="signin-icons">
                 <img src="/assets/icons/apple-colorful.svg" alt="google" />
               </Link>
-              <Link to='#' className="signin-icons">
+              <Link to="#" className="signin-icons">
                 <img src="/assets/icons/facebook-colorful.svg" alt="google" />
               </Link>
             </div>
