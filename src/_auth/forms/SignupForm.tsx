@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import LineText from "@/components/shared/LineText";
 import { SignupValidation } from "@/lib/validation";
+import { z } from "zod";
 
 const SignupForm = () => {
   const form = useForm<z.infer<typeof SignupValidation>>({
@@ -34,7 +35,6 @@ const SignupForm = () => {
         <Form {...form}>
           <div className="w-full flex-start flex-col mt-10">
             <form
-              onSubmit={console.log("Submit")}
               className="w-2/3 mt-4 grid grid-cols-4 gap-10 "
             >
               <FormField

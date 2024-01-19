@@ -41,7 +41,6 @@ const SigninForm = () => {
         <Form {...form}>
           <div className="sm:w-420 flex-start flex-col">
             <form
-              onSubmit={console.log("Submit")}
               className="flex flex-col w-full mt-4 gap-9"
             >
               <FormField
