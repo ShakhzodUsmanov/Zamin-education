@@ -1,6 +1,7 @@
+import CardCarousel from "@/components/shared/CardCarousel";
 import PhotoGrid from "@/components/shared/PhotoGrid";
 import Reasons from "@/components/shared/Reasons";
-import SponsorsCarousel from "@/components/shared/SponsorsCarusel";
+import SponsorsCarousel from "@/components/shared/SponsorsCarousel";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -49,12 +50,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="reasons">
+      <section className="reasons mt-[140px]">
         <Reasons />
       </section>
 
+      <section className="card-courses mt-[100px]">
+        <CardCarousel />
+      </section>
+
       <section className="sec-photo-grid mt-[100px]">
-        <h3 className="h3-title text-center">Foto Galereya</h3>
+        <h3 className="h2-title-joss text-center">Foto Galereya</h3>
         <p className="p-ghost text-center mt-5">
           Bizning kundalik faoliyatlarimiz haqida ushbu media bilan tanishing
         </p>

@@ -28,6 +28,8 @@ module.exports = {
         'secondary-500': '#FFB620',
         'off-white': '#D0DFFF',
         'red': '#FF5A5A',
+        'orange': '#FF782D',
+        'yellow': '#FFC700',
         'dark-blue': '#070F34',
         'dark-blue-2': '#232857',
         'dark-1': '#000000',
@@ -51,7 +53,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-
+        poppins: ['Poppins', 'sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif']      
       },
       keyframes: {
         'accordion-down': {

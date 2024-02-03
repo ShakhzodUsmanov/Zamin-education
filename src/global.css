@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,100;1,200&display=swap');
 
-.font-josefin {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,6 +28,7 @@
   .footer-icon {
     @apply w-5 h-5 bg-light-1 flex items-center justify-center rounded-full text-dark-blue text-sm
   }
+
   .signin-icons{
     @apply flex items-center justify-center bg-light-1 border border-light-3 w-[122px] h-[67px] rounded-lg hover:shadow-lg transition hover:border-none hover:scale-105
   }
@@ -52,12 +45,20 @@
     @apply text-[36px] font-bold leading-[138%] tracking-tighter text-dark-blue-2;
   }
 
-  .h3-title{
-    @apply text-[36px] font-bold leading-[138%] tracking-tighter text-dark-blue-2 font-josefin;
+  .h2-title-joss{
+    @apply text-[36px] font-bold leading-[138%] tracking-tighter text-dark-3 font-josefin;
+  }
+
+  .h3-title-joss{
+    @apply text-[24px] font-bold leading-[138%] tracking-tighter text-dark-3 font-josefin;
   }
 
   .p-ghost {
     @apply text-light-5
+  }
+
+  .p-ghost-joss {
+    @apply text-light-5 font-josefin
   }
 
   /* UTILITIES */
@@ -97,8 +98,6 @@
     @apply h-14 bg-light-3 border-none placeholder:text-light-5 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
   }
 
-  
-
   .shad-textarea {
     @apply h-36 bg-dark-3 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
   }
@@ -106,6 +105,10 @@
   /* Button */
   .shad-button_primary {
     @apply bg-gradient-to-r from-primary-green from-[-37%] to-primary-purple to-[137%] transform transition hover:scale-105 text-light-1 flex gap-2 text-center justify-center align-middle py-[25px] text-sm shadow-lg hover:shadow-xl !important;
+  }
+  
+  .shad-button_card {
+    @apply bg-primary-green transform transition text-light-1 flex gap-2 text-center justify-center align-middle py-[25px] text-sm shadow-lg hover:bg-orange !important;
   }
 
   .shad-button_dark_4 {

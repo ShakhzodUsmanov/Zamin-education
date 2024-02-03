@@ -4,7 +4,7 @@ const SponsorsCarousel = () => {
   return (
     <div className="sponsors">
       <div className="sponsors-header flex justify-between lg:flex-row flex-col">
-        <h3 className="h3-title w-full lg:w-1/3">
+        <h3 className="h2-title-joss w-full lg:w-1/3">
           Biz bilan hamkor bo’lgan tashkilotlar bilan tanishing!
         </h3>
         <p className="p-ghost w-full lg:w-1/2 items-center flex leading-[175%]">
